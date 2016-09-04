@@ -47,16 +47,15 @@ dependencies {
     testCompile "org.grails:grails-plugin-testing"
 }
 grailsPublish {
-    // TODO: Provide values here
-    user = 'user'
-    key = 'key'
-    githubSlug = 'foo/bar'
+    userOrg = 'kefirsf'
+    githubSlug = 'kefirfromperm/grails-sms'
     license {
         name = 'Apache-2.0'
     }
-    title = "My Plugin"
-    desc = "Full plugin description"
-    developers = [johndoe:"John Doe"]
-    portalUser = ""
-    portalPassword = ""    
+    websiteUrl = 'https://grails.org/plugins.html#plugin/sms'
+    issueTrackerUrl = 'https://github.com/kefirfromperm/grails-sms/issues'
+    vcsUrl = 'https://github.com/kefirfromperm/grails-sms.git'
+    title = "Grails SMS Plugin"
+    desc = "The plugin provides a send SMS interface."
+    developers = [kefirfromperm:"Vitalii Samolovskikh"]
 }

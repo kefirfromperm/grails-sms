@@ -1,4 +1,4 @@
-package sms
+package grails.plugins.sms
 
 import grails.boot.*
 import grails.boot.config.GrailsAutoConfiguration
