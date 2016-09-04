@@ -1,0 +1,25 @@
+grails {
+    profile = 'plugin'
+    codegen.defaultPackage = 'grails.plugins.sms'
+    spring.transactionManagement.proxies = false
+}
+
+info {
+    app {
+        name = '@info.app.name@'
+        version = '@info.app.version@'
+        grailsVersion = '@info.app.grailsVersion@'
+    }
+}
+
+spring {
+    groovy {
+        template."check-template-location" = false
+    }
+}
+
+// Spring Actuator Endpoints are Disabled by Default
+endpoints {
+    enabled = false
+    jmx.enabled = true
+}
