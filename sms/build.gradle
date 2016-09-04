@@ -14,10 +14,10 @@ buildscript {
 version "0.1"
 group "sms"
 
-apply plugin:"eclipse"
-apply plugin:"idea"
-apply plugin:"org.grails.grails-plugin"
-apply plugin:"org.grails.grails-plugin-publish"
+apply plugin: "eclipse"
+apply plugin: "idea"
+apply plugin: "org.grails.grails-plugin"
+apply plugin: "org.grails.grails-plugin-publish"
 
 ext {
     grailsVersion = project.grailsVersion
@@ -57,5 +57,5 @@ grailsPublish {
     vcsUrl = 'https://github.com/kefirfromperm/grails-sms.git'
     title = "Grails SMS Plugin"
     desc = "The plugin provides a send SMS interface."
-    developers = [kefirfromperm:"Vitalii Samolovskikh"]
+    developers = [kefirfromperm: "Vitalii Samolovskikh"]
 }

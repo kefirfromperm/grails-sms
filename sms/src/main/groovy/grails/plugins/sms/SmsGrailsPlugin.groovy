@@ -7,7 +7,7 @@ class SmsGrailsPlugin extends Plugin {
     def grailsVersion = "3.1.11 > *"
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
-        "grails-app/views/error.gsp"
+            "grails-app/views/error.gsp"
     ]
 
     def title = "Grails SMS plugin" // Headline display name of the plugin
@@ -26,18 +26,19 @@ This plugins provides only an interface to send SMS. To really send SMS you need
     def license = "APACHE"
 
     // Details of company behind the plugin (if there is one)
-    def organization = [ name: "Kefir Software Foundation", url: "http://kefirsf.org/" ]
+    def organization = [name: "Kefir Software Foundation", url: "http://kefirsf.org/"]
 
     // Any additional developers beyond the author specified above.
-    def developers = [ [ name: "Vitalii Samolovskikh", email: "kefirfromperm@gmail.com" ]]
+    def developers = [[name: "Vitalii Samolovskikh", email: "kefirfromperm@gmail.com"]]
 
     // Location of the plugin's issue tracker.
-    def issueManagement = [ system: "GitHub", url: "https://github.com/kefirfromperm/grails-sms/issues" ]
+    def issueManagement = [system: "GitHub", url: "https://github.com/kefirfromperm/grails-sms/issues"]
 
     // Online location of the plugin's browseable source code.
-    def scm = [ url: "git@github.com:kefirfromperm/grails-sms.git" ]
+    def scm = [url: "git@github.com:kefirfromperm/grails-sms.git"]
 
-    Closure doWithSpring() { {->
+    Closure doWithSpring() {
+        { ->
             // TODO Implement runtime spring config (optional)
         }
     }
