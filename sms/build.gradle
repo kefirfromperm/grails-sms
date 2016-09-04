@@ -11,8 +11,8 @@ buildscript {
     }
 }
 
-version "0.1"
-group "sms"
+version "0.1.0"
+group "org.grails.plugins"
 
 apply plugin: "eclipse"
 apply plugin: "idea"
@@ -23,6 +23,9 @@ ext {
     grailsVersion = project.grailsVersion
     gradleWrapperVersion = project.gradleWrapperVersion
 }
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
 
 repositories {
     mavenLocal()

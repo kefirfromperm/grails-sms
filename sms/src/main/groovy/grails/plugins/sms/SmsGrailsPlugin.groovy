@@ -39,7 +39,9 @@ This plugins provides only an interface to send SMS. To really send SMS you need
 
     Closure doWithSpring() {
         { ->
-            // TODO Implement runtime spring config (optional)
+            if(grailsApplication.config.sms.fake){
+                shortMessageProvider(FakeShortMessageProvider)
+            }
         }
     }
 
