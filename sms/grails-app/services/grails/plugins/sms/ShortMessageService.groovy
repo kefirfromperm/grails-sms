@@ -7,7 +7,7 @@ import groovy.util.logging.Slf4j
  */
 @Slf4j
 class ShortMessageService {
-    ShortMessageProvider shortMessageProvider;
+    ShortMessageProvider shortMessageProvider
 
     /**
      * Send a short message to a recipient
